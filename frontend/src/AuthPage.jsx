@@ -4,7 +4,7 @@ const AuthPage = (props) => {
   const onSubmit = (e) => {
     e.preventDefault()
     const { value } = e.target[0]
-    axios.post('http://rapha.uy:3001/authenticate', { username: value })
+    axios.post('http://localhost:4001/authenticate', { username: value })
       .then(r => props.onAuth({ ...r.data, secret: value }))
       .catch(e => console.error(e))
     props.onAuth({ username: value, secret: value })
