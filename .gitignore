@@ -2,6 +2,7 @@ backend/node_modules
 backend/dist
 backend/dist-ssr
 backend/*.local
+backend/*.env
 
 backend/package-lock.json
 
